@@ -1,0 +1,11 @@
+{
+  "name": "my-website-playwright",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

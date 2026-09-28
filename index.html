@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A community for web developers and designers to share work, trade thoughtful feedback, and find their next opportunity."
+    />
+    <title>MyFiRStWEbsiTE — Make good work, together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="MyFiRStWEbsiTE home">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>MyFiRStWEbsiTE</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+          aria-label="Open navigation menu"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="menu" id="primary-menu">
+          <a href="#home">Home</a>
+          <a href="#explore">Explore</a>
+          <a href="#community">Community</a>
+          <a href="#resources">Resources</a>
+          <a href="#opportunities">Opportunities</a>
+          <a class="mobile-about-link" href="#about">About</a>
+          <a class="mobile-about-link" href="#contact">Contact</a>
+        </div>
+        <a class="nav-join" href="#join"
+          >Join the community <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> A place to make things together
+          </p>
+          <h1 id="hero-title">
+            Good work gets<br />better <span>together.</span>
+          </h1>
+          <p class="hero-description">
+            A community for web developers and designers to share ideas, get
+            thoughtful feedback, and find the people and opportunities that move
+            them forward.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#join"
+              >Join the community <span aria-hidden="true">↗</span></a
+            >
+            <a class="text-link" href="#explore"
+              >See what we're making <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-note">
+            <span class="note-star" aria-hidden="true">✳</span> For the curious,
+            the building, and the figuring-it-out.
+          </div>
+        </div>
+
+        <section class="join-panel" id="join" aria-labelledby="join-title">
+          <div class="join-heading">
+            <div>
+              <p class="eyebrow">Your people are here</p>
+              <h2 id="join-title">Join the community</h2>
+            </div>
+            <span class="free-stamp">FREE<br />TO JOIN</span>
+          </div>
+          <p class="join-intro">
+            Share your work. Get feedback. Find opportunities.
+          </p>
+          <ul class="benefit-list">
+            <li>
+              <span aria-hidden="true">↗</span> Post projects and get real
+              feedback
+            </li>
+            <li>
+              <span aria-hidden="true">↗</span> Get a second pair of eyes on
+              your code
+            </li>
+            <li>
+              <span aria-hidden="true">↗</span> Find jobs, collaborators, and
+              gigs
+            </li>
+          </ul>
+          <form class="signup-form" id="signup-form">
+            <label for="signup-name">Name</label>
+            <input
+              id="signup-name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              autocomplete="name"
+              required
+            />
+            <label for="signup-email">Email</label>
+            <input
+              id="signup-email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+            <label for="signup-password">Password</label>
+            <input
+              id="signup-password"
+              name="password"
+              type="password"
+              placeholder="At least 8 characters"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            />
+            <button class="button button-primary signup-submit" type="submit">
+              Create free account <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+          <div class="form-divider"><span>or join with</span></div>
+          <div class="social-buttons">
+            <button
+              class="button button-social"
+              type="button"
+              data-provider="GitHub"
+            >
+              <span class="github-mark" aria-hidden="true">GH</span> Continue
+              with GitHub
+            </button>
+            <button
+              class="button button-social"
+              type="button"
+              data-provider="Google"
+            >
+              <span class="google-mark" aria-hidden="true">G</span> Continue
+              with Google
+            </button>
+          </div>
+          <details class="login-details">
+            <summary>
+              Already a member?
+              <span>Log in <span aria-hidden="true">↗</span></span>
+            </summary>
+            <form class="login-form" id="login-form">
+              <label for="login-email">Email</label>
+              <input
+                id="login-email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+              <label for="login-password">Password</label>
+              <input
+                id="login-password"
+                name="password"
+                type="password"
+                placeholder="Your password"
+                autocomplete="current-password"
+                required
+              />
+              <button class="button button-secondary" type="submit">
+                Log in
+              </button>
+            </form>
+          </details>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </section>
+      </section>
+
+      <section class="community-strip" aria-label="Community highlights">
+        <div><strong>7</strong><span>ways to join in</span></div>
+        <div><strong>$0</strong><span>to get started</span></div>
+        <div><strong>All</strong><span>skill levels welcome</span></div>
+        <p>Small steps count. So do big ideas.</p>
+      </section>
+
+      <section
+        class="section section-wrap"
+        id="explore"
+        aria-labelledby="explore-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A little inspiration</p>
+            <h2 id="explore-title">Made by the community.</h2>
+          </div>
+          <a class="text-link" href="#community"
+            >Explore all posts <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="showcase-grid">
+          <article class="project-feature">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1300&q=85"
+              alt="A developer's desk with a laptop open to a code editor"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <span class="tag tag-bright">PROJECT SHOWCASE</span>
+              <h3>Little tools for a more thoughtful web.</h3>
+              <p>A community preview · Feedback welcome</p>
+            </div>
+            <span class="image-index" aria-hidden="true">01 / 07</span>
+          </article>
+          <div class="post-list" aria-label="Community post previews">
+            <article class="post-preview post-lime">
+              <div class="post-meta">
+                <span class="tag">DESIGN CRITIQUE</span><span>7 min read</span>
+              </div>
+              <h3>Is this landing page saying enough with less?</h3>
+              <p>
+                Looking for a fresh perspective on hierarchy and the first
+                scroll.
+              </p>
+              <a href="#community" aria-label="See design critique discussion"
+                >Join the conversation <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="post-preview post-blue">
+              <div class="post-meta">
+                <span class="tag">CODE REVIEW</span><span>Open question</span>
+              </div>
+              <h3>What's your favorite way to handle form validation?</h3>
+              <p>
+                Sharing the approach that helped me simplify a very messy form.
+              </p>
+              <a href="#community" aria-label="See code review discussion"
+                >Join the conversation <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="community-section"
+        id="community"
+        aria-labelledby="community-title"
+      >
+        <div class="section-wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Find your way in</p>
+              <h2 id="community-title">There’s room for your kind of work.</h2>
+            </div>
+            <p class="heading-note">
+              Bring a finished project, a half-formed idea, or one very specific
+              question.
+            </p>
+          </div>
+          <div class="category-grid">
+            <a class="category-item" href="#join"
+              ><span class="category-number">01</span
+              ><span class="category-icon icon-lime" aria-hidden="true">✳</span
+              ><span class="category-text"
+                ><strong>Project showcase</strong
+                ><small>Share what you built</small></span
+              ><span class="category-arrow" aria-hidden="true">↗</span></a
+            >
+            <a class="category-item" href="#join"
+              ><span class="category-number">02</span
+              ><span class="category-icon icon-blue" aria-hidden="true"
+                >{ }</span
+              ><span class="category-text"
+                ><strong>Code reviews</strong
+                ><small>Make the next pass better</small></span
+              ><span class="category-arrow" aria-hidden="true">↗</span></a
+            >
+            <a class="category-item" href="#join"
+              ><span class="category-number">03</span
+              ><span class="category-icon icon-orange" aria-hidden="true"
+                >◒</span
+              ><span class="category-text"
+                ><strong>Design critiques</strong
+                ><small>Get unstuck on the details</small></span
+              ><span class="category-arrow" aria-hidden="true">↗</span></a
+            >
+            <a class="category-item" href="#join"
+              ><span class="category-number">04</span
+              ><span class="category-icon icon-pink" aria-hidden="true">?</span
+              ><span class="category-text"
+                ><strong>Questions &amp; help</strong
+                ><small>Ask the thing you’re stuck on</small></span
+              ><span class="category-arrow" aria-hidden="true">↗</span></a
+            >
+            <a class="category-item" href="#opportunities"
+              ><span class="category-number">05</span
+              ><span class="category-icon icon-orange" aria-hidden="true"
+                >↗</span
+              ><span class="category-text"
+                ><strong>Opportunities</strong
+                ><small>Find a job or a collaborator</small></span
+              ><span class="category-arrow" aria-hidden="true">↗</span></a
+            >
+            <a class="category-item" href="#resources"
+              ><span class="category-number">06</span
+              ><span class="category-icon icon-blue" aria-hidden="true">▤</span
+              ><span class="category-text"
+                ><strong>Resources</strong
+                ><small>Tools, tutorials, inspiration</small></span
+              ><span class="category-arrow" aria-hidden="true">↗</span></a
+            >
+            <a class="category-item" href="#join"
+              ><span class="category-number">07</span
+              ><span class="category-icon icon-lime" aria-hidden="true">✦</span
+              ><span class="category-text"
+                ><strong>Wins</strong
+                ><small>Celebrate the little big things</small></span
+              ><span class="category-arrow" aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-wrap split-section"
+        id="resources"
+        aria-labelledby="resources-title"
+      >
+        <div class="resources-copy">
+          <p class="eyebrow">Keep learning, together</p>
+          <h2 id="resources-title">A good resource is even better shared.</h2>
+          <p>
+            Save the tutorial that finally made it click. Share the tool you
+            wish you’d found sooner. Add a new reference to everyone’s
+            bookmarks.
+          </p>
+          <a class="button button-secondary" href="#join"
+            >Share a resource <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="resource-stack" aria-label="Resource examples">
+          <article class="resource-row">
+            <span class="resource-symbol symbol-1" aria-hidden="true">Aa</span>
+            <div>
+              <span class="tag">DESIGN</span>
+              <h3>Type that works hard at every size</h3>
+              <p>Field notes · 8 minute read</p>
+            </div>
+            <span class="row-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="resource-row">
+            <span class="resource-symbol symbol-2" aria-hidden="true"
+              >&lt;/&gt;</span
+            >
+            <div>
+              <span class="tag">DEVELOPMENT</span>
+              <h3>A practical guide to accessible forms</h3>
+              <p>Tutorial · Hands-on</p>
+            </div>
+            <span class="row-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="resource-row">
+            <span class="resource-symbol symbol-3" aria-hidden="true">✳</span>
+            <div>
+              <span class="tag">INSPIRATION</span>
+              <h3>A pocket-sized collection of good ideas</h3>
+              <p>Community picks · Updated often</p>
+            </div>
+            <span class="row-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="opportunities-section"
+        id="opportunities"
+        aria-labelledby="opportunities-title"
+      >
+        <div class="section-wrap opportunities-layout">
+          <div>
+            <p class="eyebrow">The next thing could be yours</p>
+            <h2 id="opportunities-title">
+              Good people.<br />Interesting work.
+            </h2>
+            <p>
+              Find a teammate, a freelance gig, or a new reason to open your
+              laptop on Monday.
+            </p>
+            <a class="button button-dark" href="#join"
+              >Explore opportunities <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="opportunity-list">
+            <a class="opportunity-item" href="#join"
+              ><span class="opportunity-type">COLLABORATION</span
+              ><strong>Build a tiny tool for local artists</strong
+              ><span class="opportunity-detail">Side project · Remote</span
+              ><span class="row-arrow" aria-hidden="true">↗</span></a
+            >
+            <a class="opportunity-item" href="#join"
+              ><span class="opportunity-type">FREELANCE</span
+              ><strong>Help a small studio refresh its portfolio</strong
+              ><span class="opportunity-detail"
+                >Design + front-end · Flexible</span
+              ><span class="row-arrow" aria-hidden="true">↗</span></a
+            >
+            <a class="opportunity-item" href="#join"
+              ><span class="opportunity-type">HACKATHON</span
+              ><strong>Make something useful in one weekend</strong
+              ><span class="opportunity-detail"
+                >Community challenge · All levels</span
+              ><span class="row-arrow" aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="about-section section-wrap"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <span class="about-mark" aria-hidden="true">M</span>
+        <div>
+          <p class="eyebrow">Why we’re here</p>
+          <h2 id="about-title">
+            The best internet is made by people who help each other.
+          </h2>
+          <p>
+            We started with a simple idea: making things for the web gets better
+            when you don’t have to do it alone. MyFiRStWEbsiTE is a place to
+            share the messy middle, trade useful feedback, celebrate progress,
+            and make room for what’s next.
+          </p>
+        </div>
+        <a class="button button-secondary" href="#join"
+          >Find your people <span aria-hidden="true">↗</span></a
+        >
+      </section>
+
+      <footer class="site-footer" id="contact">
+        <div class="footer-main section-wrap">
+          <div class="footer-brand">
+            <a class="brand brand-light" href="#home"
+              ><span class="brand-mark" aria-hidden="true">M</span
+              ><span>MyFiRStWEbsiTE</span></a
+            >
+            <p>A little more connected.<br />A lot more possible.</p>
+          </div>
+          <div class="footer-column">
+            <h2>Explore</h2>
+            <a href="#explore">Featured work</a
+            ><a href="#community">Community</a><a href="#resources">Resources</a
+            ><a href="#opportunities">Opportunities</a>
+          </div>
+          <div class="footer-column">
+            <h2>About</h2>
+            <a href="#about">Our story</a
+            ><a href="mailto:hello@myfirstwebsite.example">Contact the team</a
+            ><a href="#join">Join the community</a>
+          </div>
+          <div class="footer-column">
+            <h2>Member spaces</h2>
+            <a href="#join">Your profile</a><a href="#join">Submit a project</a
+            ><a href="#join">Messages</a><a href="#join">Dashboard</a>
+          </div>
+        </div>
+        <div class="footer-bottom section-wrap">
+          <span>Made for the people who make the web.</span
+          ><a href="#home">Back to top ↑</a>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
